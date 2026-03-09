@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Consumption Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header class="glass-panel main-header">
+            <div class="header-content">
+                <div class="title-section">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        Live Analytics
+                    </div>
+                    <h1>Electricity Consumption <span class="gradient-text">Project</span></h1>
+                    <p class="subtitle">Interactive Real-Time Dashboards & Insight Analysis</p>
+                </div>
+                
+                <div class="team-section">
+                    <h3>Project Team</h3>
+                    <ul class="team-list">
+                        <li>
+                            <div class="avatar">Dp</div>
+                            <span>Dipanshu</span>
+                        </li>
+                        <li>
+                            <div class="avatar">Dy</div>
+                            <span>Divyanka</span>
+                        </li>
+                        <li>
+                            <div class="avatar">Dt</div>
+                            <span>Divyansh Takur</span>
+                        </li>
+                        <li>
+                            <div class="avatar">Dp</div>
+                            <span>Deepanshu Parsadh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="dashboards-grid">
+            <div class="glass-panel dashboard-container">
+                <div class="panel-header">
+                    <h2>Consumption Overview</h2>
+                    <div class="panel-actions">
+                        <button class="icon-btn" title="Expand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+                    </div>
+                </div>
+                <div class="viz-wrapper">
+                    <!-- Tableau Script & Viz 1 -->
+                    <script type="module" src="https://prod-in-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+                    <tableau-viz id="tableau-viz-1" src="https://prod-in-a.online.tableau.com/t/2501003276-bd70c017e5/views/electricityconsumptionproject/Dashboard1" width="100%" height="863" toolbar="bottom" hide-tabs></tableau-viz>
+                </div>
+            </div>
+
+            <div class="glass-panel dashboard-container">
+                <div class="panel-header">
+                    <h2>Detailed Metrics</h2>
+                    <div class="panel-actions">
+                        <button class="icon-btn" title="Expand"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+                    </div>
+                </div>
+                <div class="viz-wrapper">
+                    <!-- Tableau Script & Viz 2 -->
+                    <script type="module" src="https://prod-in-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+                    <tableau-viz id="tableau-viz-2" src="https://prod-in-a.online.tableau.com/t/2501003276-bd70c017e5/views/electricityconsumptionproject/Dashboard2" width="100%" height="863" toolbar="bottom" hide-tabs></tableau-viz>
+                </div>
+            </div>
+        </section>
+
+        <footer class="glass-panel main-footer">
+            <p>&copy; 2026 Electricity Consumption Analytics. Built for real-time insight.</p>
+        </footer>
+    </main>
+</body>
+</html>

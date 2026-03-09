@@ -1,7 +1,5 @@
 # Electricity Consumption Project
 
-![Abstract Energy Background](bg.png)
-
 This project features a live, interactive web application that displays real-time analytics and detailed metrics for electricity consumption. The dashboards are built using Tableau and are seamlessly embedded into a modern, dark-themed, glassmorphism web interface.
 
 ## 🚀 Live Demo
@@ -28,3 +26,4 @@ This project was built and designed by:
 - `index.html` - The main application layout, team section, and dashboard containers.
 - `styles.css` - Custom styles, layout definitions, and neon glow background animations.
 - `README.md` - Project documentation.
+
